@@ -1,4 +1,4 @@
-#TypeScript BoilerPlate SDK
+# TypeScript BoilerPlate SDK
 
 ### What is this repository for?
 
