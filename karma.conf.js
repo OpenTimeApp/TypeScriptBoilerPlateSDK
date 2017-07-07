@@ -13,6 +13,7 @@ module.exports = function(config) {
         files: [
             './src/**/*.ts'
         ],
-        browsers: ['PhantomJS']
+        browsers: ['PhantomJS'],
+	    port: 9877
     })
 };
