@@ -8,24 +8,24 @@ export class OTBPCarService {
   public getCar(vin: string, callback: (response: OTBPGetCarResponse) => void): void {
     let request = new OTBPRequest();
 
-    // let fakeResponseText = '{"success":true,"message":"Got car successfully","data":{"vin":"1VFGDO7725DJJLKJHFH","model":"Accord","type":"Sedan","color":"Silver","amountOfWheels":4}}';
-    // let fakeResponse = JSON.parse(fakeResponseText);
-    //
-    // let response = new OTBPGetCarResponse(fakeResponse);
-    // callback(response);
+    let fakeResponseText = '{"success":true,"message":"Got car successfully","data":{"vin":"1VFGDO7725DJJLKJHFH","model":"Accord","type":"Sedan","color":"Silver","amountOfWheels":4}}';
+    let fakeResponse = JSON.parse(fakeResponseText);
 
-    request.getResponse(
-      OTBPCarService.API,
-        'profile/' + vin,
-      'POST',
-      {
-          vin: vin
-      },
-      (responseObject: any) => {
-        let response = new OTBPGetCarResponse(fakeResponse);
-        callback(response);
-      }
-    )
+    let response = new OTBPGetCarResponse(fakeResponse);
+    callback(response);
+
+    // request.getResponse(
+    //   OTBPCarService.API,
+    //     'profile/' + vin,
+    //   'POST',
+    //   {
+    //       vin: vin
+    //   },
+    //   (responseObject: any) => {
+    //     let response = new OTBPGetCarResponse(fakeResponse);
+    //     callback(response);
+    //   }
+    // )
   }
 
 }
