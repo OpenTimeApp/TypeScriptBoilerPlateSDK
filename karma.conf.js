@@ -10,6 +10,9 @@ module.exports = function(config) {
         preprocessors: {
             "**/*.ts": ["karma-typescript"]
         },
+        karmaTypescriptConfig: {
+            tsconfig: "./tsconfig.json"
+        },
         files: [
             './src/**/*.ts'
         ],
