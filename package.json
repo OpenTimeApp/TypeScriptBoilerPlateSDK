@@ -2,7 +2,6 @@
   "name": "opentime-typescript-boilerplate-sdk",
   "version": "1.0.0",
   "description": "OpenTime boilerplate for Typescript SDK",
-  "main": "src/sdk/main.ts",
   "scripts": {
     "test": "karma start"
   },
